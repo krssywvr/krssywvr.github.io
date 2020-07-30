@@ -52,13 +52,10 @@
 
           pendo.initialize({
               visitor: {
-                  id: queryString.visitor || 'testuser@pendo',
-                  email: 'mallory@pendo.io'
+                  id: queryString.visitor || 'testuser@pendo'
               },
               apiKey: 'f85edfa3-f45f-4a23-48cd-7eb115813c5f',
-              account: account,
-              ignoreHashRouting: true,
-              disableGuides: false
+              account: account
           });
 
       })('f85edfa3-f45f-4a23-48cd-7eb115813c5f');
