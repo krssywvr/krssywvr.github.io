@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Apollo Core Only Enterprise Application</title>
+  <title>Tapioca 2 Enterprise Application</title>
 
   <!-- webpack bundled css -->
   <link rel="stylesheet" href="css/patternfly.min.css">
@@ -15,7 +15,7 @@
           (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
               v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
                   o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-              y=e.createElement(n);y.async=!0;y.src='https://pendo-apollo-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+              y=e.createElement(n);y.async=!0;y.src='https://pendo-link-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
               z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
           var url = window.location.search;
@@ -48,13 +48,14 @@
 
           pendo.initialize({
               visitor: {
-                  id: queryString.visitor || 'testuser@pendo'
+                  id: queryString.visitor || 'testuser@pendo',
+                  email: queryString.email || 'testuser@pendo'
               },
-              apiKey: '7397188a-9b85-4825-5476-20de4cd4bfbe',
+              apiKey: 'dc34c756-41cc-4111-79bc-ae7e10c007d5',
               account: account
           });
 
-      })('7397188a-9b85-4825-5476-20de4cd4bfbe');
+      })('dc34c756-41cc-4111-79bc-ae7e10c007d5');
   </script>
 
 </head>
@@ -81,7 +82,7 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <span class="pficon pficon-user"></span>
-          Mal Brame <b class="caret"></b>
+          K. Weaver <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
           <li>
@@ -119,20 +120,20 @@
           </li>
           <li class="divider"></li>
           <li>
-            <a href="apollo-core-only-login.html">Logout</a>
+            <a href="tapioca2-login.html">Logout</a>
           </li>
         </ul>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-primary">
       <li>
-        <a href="apollo-core-only.html">Dashboard</a>
+        <a href="tapioca2.html">Dashboard</a>
       </li>
       <li class="active">
-        <a href="apollo-core-only-list.html">List View</a>
+        <a href="tapioca2-list.html">List View</a>
       </li>
       <li>
-        <a href="apollo-core-only-empty.html">Empty State</a>
+        <a href="tapioca2-empty.html">Empty State</a>
       </li>
     </ul>
   </div>
@@ -215,7 +216,7 @@
           <div class="form-group toolbar-pf-view-selector">
             <ul class="list-inline">
               <li><a href="#" title="Table View"><i class="fa fa-table"></i></a></li>
-              <li><a href="apollo-core-only-card.html" title="Card View"><i class="fa fa-th"></i></a></li>
+              <li><a href="tapioca2-card.html" title="Card View"><i class="fa fa-th"></i></a></li>
               <li class="active"><a href="#" title="List View"><i class="fa fa-th-list"></i></a></li>
             </ul>
           </div>
@@ -266,8 +267,8 @@
 
       <div class="list-group list-view-pf">
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
-          <a href="apollo-core-only-details.html" class="list-group-item-link"></a>
+        <div data-link="tapioca2-details.html" class="list-group-item">
+          <a href="tapioca2-details.html" class="list-group-item-link"></a>
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -320,7 +321,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -373,7 +374,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -426,7 +427,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -479,7 +480,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -532,7 +533,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -585,7 +586,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -638,7 +639,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
@@ -691,7 +692,7 @@
           </div>
         </div><!-- list-group-item -->
 
-        <div data-link="apollo-core-only-details.html" class="list-group-item">
+        <div data-link="tapioca2-details.html" class="list-group-item">
           <div class="list-view-pf-checkbox">
             <input type="checkbox">
           </div>
